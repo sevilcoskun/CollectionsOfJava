@@ -1,15 +1,16 @@
-package test;
+package test.listsTest;
 
 import main.Product;
-import main.Shipment;
-import static main.ProductFixtures.*;
+import main.lists.Shipment;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import static main.ProductFixtures.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ShipmentTest {
     private Shipment shipment = new Shipment(); //way 1
