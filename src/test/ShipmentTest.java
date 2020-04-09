@@ -4,19 +4,14 @@ import main.Product;
 import main.Shipment;
 import static main.ProductFixtures.*;
 
-<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-=======
-import java.util.Iterator;
->>>>>>> master
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ShipmentTest {
-<<<<<<< HEAD
     private Shipment shipment = new Shipment(); //way 1
     List<Product> shipmentList = new ArrayList<>(); //way 2
 
@@ -25,15 +20,7 @@ public class ShipmentTest {
         /*//way 1
         shipment.add(door);
         shipment.add(window);
-=======
-    private Shipment shipment = new Shipment();
 
-    @Test
-    public void shouldAddItems() throws Exception{
-        shipment.add(door);
-        shipment.add(window);
-
->>>>>>> master
         final Iterator<Product> productIterator = shipment.iterator();
         while(productIterator.hasNext()) {
             Product product_door = productIterator.next();
@@ -41,7 +28,6 @@ public class ShipmentTest {
 
             Product product_window = productIterator.next();
             assertEquals(product_window, window);
-<<<<<<< HEAD
         }*/
 
         //way2
@@ -49,9 +35,6 @@ public class ShipmentTest {
         shipmentList.add(window);
         assertTrue(shipmentList.contains(door));
         assertTrue(shipmentList.contains(window));
-=======
-        }
->>>>>>> master
     }
 
     @Test
